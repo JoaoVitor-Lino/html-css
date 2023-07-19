@@ -31,8 +31,8 @@ header > h1 {
     padding-top: 50px;
     font-variant:  small-caps;
     font-family: var(--fonte2);
-    font-size: 4em;
-    /* font-size: 10vw; */
+    /* font-size: 4em; */
+    font-size: 10vw;
 }
 
 header > p{
@@ -55,10 +55,9 @@ section{
     padding-left: 30px;
     line-height: 2em;
     font-family: var(--fonte3);
-    font-size: 1.4em;
-    /* font-size: 4.2vw; 
-        testar caso nao goste do outro
-    */
+    /* font-size: 1.4em; */
+    font-size: 3vw; 
+   
 }
 
 section > p{
