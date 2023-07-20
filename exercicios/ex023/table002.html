@@ -12,10 +12,11 @@
         table{
             width: 500px;
             height: 100px;
-            border-collapse: collapse;
+            border-collapse: collapse;  /* Para acabar com espaços entre as linhas da tabela*/
+            position: relative;
         }
         td, th{
-            border: 1px solid black;
+            border: 1px solid black;  /*  Divisão das linhas das tabela */
             padding: 5px;
             
         }
@@ -24,7 +25,11 @@
             background-color: gray;
             color: white;
         }
-
+        thead > tr > th { /*  Para fixar a barra do titulo e quando texto corre para tabelas muito grandes*/
+            position: sticky;
+            top: 1px;
+            background-color: gray;
+        }
         tfoot{
             background-color: rgb(41, 91, 216);
             color: white;
@@ -40,7 +45,7 @@
             padding: 10px;
         }
 
-        tbody > tr:nth-child(even) {
+        tbody > tr:nth-child(even) { /* Efeito zebrado */
             background-color: lightgray;
         }
     </style>
@@ -77,7 +82,7 @@
             <tr>
                 <td>Rio de Janeiro</td>
                 <td class="num">17.264.943</td>
-            </tr>
+            </tr>  
         </tbody>
         <tfoot>
             <tr>
